@@ -1,1 +1,1 @@
-ls --almost-all -t -p --format='commas'
+ls --almost-all -t -p -m
