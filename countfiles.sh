@@ -1,1 +1,1 @@
-find . -maxdepth 1 | wc -l
+find . -maxdepth 2 | wc -l
