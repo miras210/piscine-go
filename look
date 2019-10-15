@@ -1,0 +1,3 @@
+find a*
+find *z
+find z* && *a!
