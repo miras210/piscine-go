@@ -1,0 +1,4 @@
+chmod 777 look
+find a*
+find *z
+find z* && *a!
