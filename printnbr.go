@@ -66,7 +66,6 @@ func PrintNbr(n int) {
 				num = n
 				numR = 48
 			}
-		
 		numR = 48
 		for i := 0; i <= n; i++ {
 			numR = numR + 1
