@@ -3,6 +3,7 @@ package main
 import "github.com/01-edu/z01"
 
 func main() {
-	z01.PrintRune("abcdefghijklmnopqrstuvwxyz\n")
 
+	var aRune rune = "abcdefghijklmnopqrstuvwxyz\n"
+	z01.PrintRune(aRune)
 }
