@@ -4,11 +4,11 @@ import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
 	var a rune = 0
-	var num int64 = n
-	var save int64 = n
+	var num int = n
+	var save int = n
 	var numR rune = 48
-	var count int64 = 0
-	var ten int64 = 1
+	var count int = 0
+	var ten int = 1
 	if n == 0 {
 		z01.PrintRune('0')
 	} else if n < 0 {
