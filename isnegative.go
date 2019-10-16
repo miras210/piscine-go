@@ -1,5 +1,6 @@
 package main
 
+import piscine ".."
 import "github.com/01-edu/z01"
 
 func IsNegative(nb int) {
@@ -12,7 +13,5 @@ func IsNegative(nb int) {
 	}
 }
 func main() {
-	IsNegative(1)
-	IsNegative(0)
-	IsNegative(-1)
+
 }
