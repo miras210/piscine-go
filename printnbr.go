@@ -11,7 +11,7 @@ func PrintNbr(n int) {
 		z01.PrintRune('0')
 	} else if n < 0 {
 		z01.PrintRune('-')
-		n = n - 2*n
+		n = n - 2 * n
 		num = n
 		for n > 10 {
 			for num > 10 {
@@ -51,6 +51,6 @@ func PrintNbr(n int) {
 			ten = 1
 			num = n
 		}
-		z01.PrintRune(rune(n+48))
+		z01.PrintRune(rune(n + 48))
 	}
 }
