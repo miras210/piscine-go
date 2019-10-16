@@ -5,6 +5,8 @@ import "github.com/01-edu/z01"
 func PrintNbr(n int) {
 	var a rune = 0
 	var num int = n
+	var save int = n
+	var numR rune = 48
 	var count int = 0
 	var ten int = 1
 	if n == 0 {
@@ -13,13 +15,19 @@ func PrintNbr(n int) {
 		z01.PrintRune('-')
 		n = n - 2*n
 		num = n
+		save = n
 		for n > 10 {
 			for num > 10 {
 				num = num / 10
 				count++
 			}
+			save = num
+			for num != 0 {
+				numR = numR + 1
+				num--
+			}
 			for i := a; i <= 127; i++ {
-				if i == rune(num + 48) {
+				if i == numR {
 					z01.PrintRune(i)
 				}	 
 			}
@@ -27,19 +35,30 @@ func PrintNbr(n int) {
 				ten = ten * 10;
 			}
 			count = 0
-			n = n - ten * num
+			n = n - ten * save
+			save = n
 			ten = 1
 			num = n
+			numR = 48
 		}
-		z01.PrintRune(rune(n+48))
+		numR = 48
+		for i := 0; i <= n; i++ {
+			numR = numR + 1
+		}
+		z01.PrintRune(numR-1)
 	} else if n > 0 {
 		for n > 10 {
 			for num > 10 {
 				num = num / 10
 				count++
 			}
+			save = num
+			for num != 0 {
+				numR = numR + 1
+				num--
+			}
 			for i := a; i <= 127; i++ {
-				if i == rune(num + 48) {
+				if i == numR {
 					z01.PrintRune(i)
 				}	 
 			}
@@ -47,10 +66,16 @@ func PrintNbr(n int) {
 				ten = ten * 10;
 			}
 			count = 0
-			n = n - ten * num
+			n = n - ten * save
+			save = n
 			ten = 1
 			num = n
+			numR = 48
 		}
-		z01.PrintRune(rune(n+48))
+		numR = 48
+		for i := 0; i <= n; i++ {
+			numR = numR + 1
+		}
+		z01.PrintRune(numR-1)
 	}
 }
