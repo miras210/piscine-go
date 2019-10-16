@@ -41,5 +41,5 @@ func PrintComb() {
 	z01.PrintRune(32)
 	z01.PrintRune('9')
 	z01.PrintRune('9')
-	z01.PrintRube(10)
+	z01.PrintRune(10)
 }
