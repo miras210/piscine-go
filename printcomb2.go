@@ -8,7 +8,7 @@ func PrintComb2() {
 	var b1 rune = '0'
 	var b2 rune = '0'
 	for d := a1; d <= 57; d++ {
-		for v := a2; v < 57; v++ {
+		for v := a2; v <= 57; v++ {
 			for i := b1; i <= 57; i++ {
 				for j := b2; j <= 57; j++ {
 					if d == '9' && v == '8' && i == '9' && j == '9' {
