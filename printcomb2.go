@@ -12,9 +12,8 @@ func PrintComb() {
 			for i := b1; i <= 57; i++ {
 				for j := b2; j <= 57; j++ {
 					if d == '9' && v == '8' && i == '9' && j == '9' {
-						break;
-					} else
-						if d < i {
+						break
+					} else if d < i {
 							z01.PrintRune(d)
 							z01.PrintRune(v)
 							z01.PrintRune(32)
