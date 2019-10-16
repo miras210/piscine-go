@@ -1,4 +1,4 @@
-package printcomb
+package printcomb2
 
 import "github.com/01-edu/z01"
 
