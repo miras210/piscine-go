@@ -1,4 +1,4 @@
-package printnbr
+package main
 
 import "github.com/01-edu/z01"
 
@@ -16,8 +16,8 @@ func PrintNbr(n int) {
 		n = n - 2*n
 		num = n
 		save = n
-		for n > 10 {
-			for num > 10 {
+		for n >= 10 {
+			for num >= 10 {
 				num = num / 10
 				count++
 			}
@@ -36,6 +36,9 @@ func PrintNbr(n int) {
 			}
 			count = 0
 			n = n - ten * save
+			if n < ten/10 {
+				z01.PrintRune('0')
+			}
 			save = n
 			ten = 1
 			num = n
@@ -47,8 +50,8 @@ func PrintNbr(n int) {
 		}
 		z01.PrintRune(numR-1)
 	} else if n > 0 {
-		for n > 10 {
-			for num > 10 {
+		for n >= 10 {
+			for num >= 10 {
 				num = num / 10
 				count++
 			}
@@ -67,6 +70,9 @@ func PrintNbr(n int) {
 			}
 			count = 0
 			n = n - ten * save
+			if n < ten/10 {
+				z01.PrintRune('0')
+			}
 			save = n
 			ten = 1
 			num = n
@@ -78,4 +84,9 @@ func PrintNbr(n int) {
 		}
 		z01.PrintRune(numR-1)
 	}
+}
+
+func main() {
+	PrintNbr(101)
+	z01.PrintRune(10)
 }
