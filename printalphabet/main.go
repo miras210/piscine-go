@@ -1,8 +1,8 @@
 package main
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func main() {
-	fmt.Println("abcdefghijklmnopqrstuvwxyz\n")
+	z01.PrintRune("abcdefghijklmnopqrstuvwxyz\n")
 
 }
