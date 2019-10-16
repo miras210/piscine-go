@@ -36,7 +36,7 @@ func PrintComb2() {
 			}
 		}
 	}
-	z01.PrintRune('9')
+	z01.PrintRune(rune(9))
 	z01.PrintRune('8')
 	z01.PrintRune(32)
 	z01.PrintRune('9')
