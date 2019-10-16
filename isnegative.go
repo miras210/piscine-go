@@ -12,7 +12,11 @@ func IsNegative(nb int) {
 	}
 }
 func main() {
+<<<<<<< HEAD
 	IsNegative(1)
 	IsNegative(0)
 	IsNegative(-1)
+=======
+
+>>>>>>> 9d9768863461e0a3deb2929d6cda964a5e03ab4f
 }
