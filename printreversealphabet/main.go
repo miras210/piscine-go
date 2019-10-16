@@ -8,6 +8,5 @@ func main() {
 	for i := a; i >= 97; i-- {
 		z01.PrintRune(i)
 	}
-	z01.PrintRune(10)
 }
 
