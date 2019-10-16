@@ -38,7 +38,7 @@ func PrintNbr(n int) {
 			n = n * (-1)
 			num = n
 			save = n
-			for n >= 10 {
+			for n > 10 {
 				for num >= 10 {
 					num = num / 10
 					count++
