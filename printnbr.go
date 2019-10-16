@@ -33,7 +33,6 @@ func PrintNbr(n int) {
 			z01.PrintRune('8')
 			z01.PrintRune('0')
 			z01.PrintRune('8')
-			break
 		} else {
 			z01.PrintRune('-')
 			n = n * (-1)
@@ -67,12 +66,13 @@ func PrintNbr(n int) {
 				num = n
 				numR = 48
 			}
-		}
+		
 		numR = 48
 		for i := 0; i <= n; i++ {
 			numR = numR + 1
 		}
 		z01.PrintRune(numR - 1)
+		}
 	} else if n > 0 {
 		for n >= 10 {
 			for num >= 10 {
