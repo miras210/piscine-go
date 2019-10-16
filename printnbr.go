@@ -31,7 +31,7 @@ func PrintNbr(n int) {
 			ten = 1
 			num = n
 		}
-		z01.PrintRune(rune(n+48))
+		z01.PrintRune(rune(n + 48))
 	} else if n > 0 {
 		for n > 10 {
 			for num > 10 {
