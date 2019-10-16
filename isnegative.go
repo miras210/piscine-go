@@ -12,7 +12,14 @@ func IsNegative(nb int) {
 	}
 }
 func main() {
+<<<<<<< HEAD
 	IsNegative(1)
 	IsNegative(0)
 	IsNegative(-1)
 }
+=======
+	piscine.IsNegative(1)
+	piscine.IsNegative(0)
+	piscine.IsNegative(-1)
+}
+>>>>>>> 002cfecd20b714846caffe9206f705d3e48467ec
