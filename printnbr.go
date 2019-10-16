@@ -21,17 +21,17 @@ func PrintNbr(n int) {
 			for i := a; i <= 127; i++ {
 				if i == rune(num+48) {
 					z01.PrintRune(i)
-				}	 
+				}
 			}
 			for j := 0; j < count; j++ {
 				ten = ten * 10
 			}
 			count = 0
-			n = n - ten * num
+			n = n - ten*num
 			ten = 1
 			num = n
 		}
-		z01.PrintRune(rune(n+48))
+		z01.PrintRune(rune(n + 48))
 	} else if n > 0 {
 		for n > 10 {
 			for num > 10 {
@@ -41,16 +41,16 @@ func PrintNbr(n int) {
 			for i := a; i <= 127; i++ {
 				if i == rune(num+48) {
 					z01.PrintRune(i)
-				}	 
+				}
 			}
 			for j := 0; j < count; j++ {
 				ten = ten * 10
 			}
 			count = 0
-			n = n - ten * num
+			n = n - ten*num
 			ten = 1
 			num = n
 		}
-		z01.PrintRune(rune(n+48))
+		z01.PrintRune(rune(n + 48))
 	}
 }
