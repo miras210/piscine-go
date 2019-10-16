@@ -35,7 +35,7 @@ func PrintNbr(n int) {
 				ten = ten * 10
 			}
 			count = 0
-			n = n - ten * save
+			n = n - ten*save
 			save = n
 			ten = 1
 			num = n
@@ -45,7 +45,7 @@ func PrintNbr(n int) {
 		for i := 0; i <= n; i++ {
 			numR = numR + 1
 		}
-		z01.PrintRune(numR-1)
+		z01.PrintRune(numR - 1)
 	} else if n > 0 {
 		for n > 10 {
 			for num > 10 {
@@ -66,7 +66,7 @@ func PrintNbr(n int) {
 				ten = ten * 10
 			}
 			count = 0
-			n = n - ten * save
+			n = n - ten*save
 			save = n
 			ten = 1
 			num = n
@@ -76,6 +76,6 @@ func PrintNbr(n int) {
 		for i := 0; i <= n; i++ {
 			numR = numR + 1
 		}
-		z01.PrintRune(numR-1)
+		z01.PrintRune(numR - 1)
 	}
 }
