@@ -8,7 +8,7 @@ func PrintComb() {
 	var c rune = '2'
 	for i := a; i <= 54; i++ {
 		for j := b; j <= 56; j++ {
-			for k:= c; k <= 57; k++ {
+			for k := c; k <= 57; k++ {
 				if i < j {
 					if j < k {
 						z01.PrintRune(i)
@@ -24,4 +24,5 @@ func PrintComb() {
 	z01.PrintRune('7')
 	z01.PrintRune('8')
 	z01.PrintRune('9')
+	z01.PrintRune(10)
 }
