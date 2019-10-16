@@ -1,6 +1,3 @@
-package main
-
-import "./student"
 import "github.com/01-edu/z01"
 
 func IsNegative(nb int) {
@@ -11,9 +8,4 @@ func IsNegative(nb int) {
 		z01.PrintRune('F')
 		z01.PrintRune(10)
 	}
-}
-func main() {
-	IsNegative(1)
-	IsNegative(0)
-	IsNegative(-1)
 }
