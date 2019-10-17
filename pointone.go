@@ -1,5 +1,5 @@
 package pointone
 
-func PontOne(n *int) {
+func PointOne(n *int) {
 	*n = *n + 1
 }
