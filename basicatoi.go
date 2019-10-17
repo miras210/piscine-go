@@ -9,7 +9,7 @@ func BasicAtoi(s string) int {
 		if check {
 			for i := ansR; i <= 9; i++ {
 				count++
-				if i == rune(char) - 48 {
+				if i == rune(char)-48 {
 					break
 				}
 			}
@@ -21,7 +21,7 @@ func BasicAtoi(s string) int {
 				check = true
 				for i := ansR; i <= 9; i++ {
 					count++
-					if i == rune(char) - 48 {
+					if i == rune(char)-48 {
 						break
 					}
 				}
