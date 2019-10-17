@@ -39,7 +39,7 @@ func Atoi(s string) int {
 			return ans
 		} else {
 			for _, char := range s {
-				if int(char) - 48 >= 0 && int(char) - 48 <= 9 {
+				if int(char)-48 >= 0 && int(char)-48 <= 9 {
 					ans = 10 * ans
 					ans = ans + int(char) - 48
 				} else {
