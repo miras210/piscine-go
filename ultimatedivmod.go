@@ -1,4 +1,4 @@
-package main
+package ultimatedivmod
 
 func UltimateDivMod(a *int, b *int) {
 	var c int = *a / *b
