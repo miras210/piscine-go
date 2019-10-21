@@ -1,4 +1,4 @@
-package iterativefactorial
+package recursivefactorial
 
 func RecursiveFactorial(nb int) int {
 	if nb >= 0 && nb <= 50 {
