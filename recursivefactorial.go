@@ -1,0 +1,13 @@
+package iterativefactorial
+
+func RecursiveFactorial(nb int) int {
+	if nb >= 0 && nb <= 50 {
+		if nb == 1 {
+			return 1
+		} else {
+			return IterativeFactorial(nb - 1) * nb
+		}
+	} else {
+		return 0
+	}
+}
