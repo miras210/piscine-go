@@ -12,5 +12,7 @@ func FindNextPrime(nb int) int {
 		return 2
 	} else if nb == 1 {
 		return 2
+	} else {
+		return 2
 	}
 }
