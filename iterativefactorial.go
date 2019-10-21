@@ -1,12 +1,12 @@
 package iterativefactorial
 
-func IterativeFactorial(nb int) int {
+func RecursiveFactorial(nb int) int {
 	if nb >= 0 && nb <= 50 {
-		ans := 1
-		for i := 2; i <= nb; i++ {
-			ans = ans * i
+		if nb == 1 {
+			return 1
+		} else {
+			return IterativeFactorial(nb-1) * nb
 		}
-		return ans
 	} else {
 		return 0
 	}

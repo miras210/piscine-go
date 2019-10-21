@@ -1,0 +1,28 @@
+package main
+
+import "github.com/01-edu/z01"
+
+func print(num int) {
+	z01.PrintRune(rune(num) + '0')
+}
+
+func show(now []int) {
+
+}
+
+func write1() {
+	
+}
+
+func PrintCombN(n int) {
+	max := [9]int{9, 9, 9, 9, 9, 9, 9, 9, 9}
+	now := [9]int{0}
+	
+	if n == 1 {
+		
+	}
+}
+
+func main() {
+	print(8)
+}
