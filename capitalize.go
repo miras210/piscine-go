@@ -10,6 +10,8 @@ func Capitalize(s string) string {
 			} else {
 				s1 += string(char)
 			}
+		} else if car >= 'A' && char <= 'Z' {
+			s1 += string(char + 32)
 		} else {
 			s1 += string(char)
 		}
