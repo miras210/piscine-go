@@ -1,7 +1,6 @@
 package compare
 
 func Compare(a, b string) int {
-	var equal int = 0
 	count1 := 0
 	count2 := 0
 	for range a {
