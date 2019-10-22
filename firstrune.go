@@ -1,8 +1,10 @@
 package fRune
 
 func FirstRune(s string) rune {
+	var a rune
 	for _, char := range s {
-		return rune(char)
+		a := rune(char)
 		break
 	}
+	return a
 }
