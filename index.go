@@ -6,17 +6,19 @@ func Index(s string, toFind string) int {
 	for range toFind {
 		count++
 	}
-	c := 0
-	for i, char := range s {
-		if char == rune(toFind[c]) {
-			ind = i + 1
-			c++
-		} else {
-			ind = -1
-			c = 0
-		}
-		if c == count {
-			break
+	if count != 0 {
+		c := 0
+		for i, char := range s {
+			if char == rune(toFind[c]) {
+				ind = i + 1
+				c++
+			} else {
+				ind = -1
+				c = 0
+			}
+			if c == count {
+				break
+			}
 		}
 	}
 	if ind == -1 {
