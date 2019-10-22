@@ -3,16 +3,20 @@ package index
 func Index(s string, toFind string) int {
 	var ind int = -1
 	var count int = 0
-	for index, char := range s {
-		if char == rune(toFind[count]) {
-			ind = index + 1
-			count++
+	for range toFind {
+		count++
+	}
+	c := 0
+	for i, char := range s {
+		if char == rune(toFind[c]) {
+			ind = i + 1
+			c++
 		} else {
 			ind = -1
-			count = 0
+			c = 0
 		}
-		if count >= len(toFind) {
-			break
+		if c == count {
+			break;
 		}
 	}
 	if ind == -1 {
