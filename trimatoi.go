@@ -2,7 +2,7 @@ package atoi
 
 func TrimAtoi(s string) int {
 	var sign bool = true
-	var int num = 0
+	var num int = 0
 	for _, char := range s {
 		if char >= '0' && char <= '9' {
 			num = num * 10
