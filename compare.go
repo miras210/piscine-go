@@ -19,8 +19,8 @@ func Compare(a, b string) int {
 	if count1 == count2 {
 		return 0
 	} else if count1 > count2 {
-		return -1
-	} else {
 		return 1
+	} else {
+		return -1
 	}
 }
