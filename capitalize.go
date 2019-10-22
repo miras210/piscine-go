@@ -12,7 +12,11 @@ func Capitalize(s string) string {
 					s1 += string(char - 32)
 				}
 			} else {
-				s1 += string(char)
+				if char >= 'A' && char <= 'Z' {
+					s1 += string(char + 32)
+				} else {
+					s1 += string(char)
+				}
 			}
 		} else if char >= 'A' && char <= 'Z' {
 			s1 += string(char + 32)
