@@ -6,7 +6,7 @@ func Index(s string, toFind string) int {
 	for index, char := range s {
 		if char == rune(toFind[count]) {
 			ind = index + 1
-			count++ 
+			count++
 		} else {
 			ind = -1
 			count = 0
