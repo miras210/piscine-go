@@ -16,7 +16,7 @@ func Index(s string, toFind string) int {
 			c = 0
 		}
 		if c == count {
-			break;
+			break
 		}
 	}
 	if ind == -1 {
