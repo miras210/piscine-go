@@ -20,6 +20,8 @@ func Index(s string, toFind string) int {
 				break
 			}
 		}
+	} else {
+		return 0
 	}
 	if ind == -1 {
 		return ind
