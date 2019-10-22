@@ -32,10 +32,10 @@ func two(nbr int, base string, sign bool) {
 	var ans string
 	count := 0
 	if sign == false {
-		nbr = (-1)*nbr
+		nbr = (-1) * nbr
 	}
 	for nbr != 0 {
-		if nbr % 2 == 1 {
+		if nbr%2 == 1 {
 			ans += string(base[1])
 		} else {
 			ans += string(base[0])
@@ -43,7 +43,7 @@ func two(nbr int, base string, sign bool) {
 		nbr /= 2
 	}
 	for range ans {
-		count ++
+		count++
 	}
 	for i := count - 1; i >= 0; i-- {
 		z01.PrintRune(rune(ans[i]))
@@ -68,7 +68,7 @@ func PrintNbrBase(nbr int, base string) {
 			for nbr != 0 {
 				num := 0
 				if sign == false {
-					nbr = (-1)*nbr
+					nbr = (-1) * nbr
 					num = nbr
 					sign = true
 				} else {
@@ -84,7 +84,7 @@ func PrintNbrBase(nbr int, base string) {
 				for i := 0; i < power; i++ {
 					minus *= count
 				}
-				nbr -= minus*num
+				nbr -= minus * num
 			}
 		}
 	} else {
