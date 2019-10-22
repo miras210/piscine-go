@@ -8,7 +8,7 @@ func Join(strs []string, sep string) string {
 	}
 	for i := range strs {
 		ans += strs[i]
-		if i != count - 1 {
+		if i != count-1 {
 			ans += sep
 		}
 	}
