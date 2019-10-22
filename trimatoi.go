@@ -15,6 +15,6 @@ func TrimAtoi(s string) int {
 	if sign {
 		return num
 	} else {
-		return (-1)*num
-	} 
+		return (-1) * num
+	}
 }
