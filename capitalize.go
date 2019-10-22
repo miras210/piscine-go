@@ -6,7 +6,11 @@ func Capitalize(s string) string {
 	for _, char := range s {
 		if (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') {
 			if !((prev >= 'a' && prev <= 'z') || (prev >= 'A' && prev <= 'Z') || (prev >= '0' && prev <= '9')) {
-				s1 += string(char - 32)
+				if char >= 'A' && char <= 'Z' {
+					s1 += string(char)
+				} else {
+					s1 += string(char - 32)
+				}
 			} else {
 				s1 += string(char)
 			}
