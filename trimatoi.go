@@ -7,8 +7,7 @@ func TrimAtoi(s string) int {
 		if char >= '0' && char <= '9' {
 			num = num * 10
 			num = num + int(char) - 48
-		}
-		if char == '-' {
+		} else if char == '-' && num != 0 {
 			sign = false
 		}
 	}
