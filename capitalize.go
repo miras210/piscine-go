@@ -4,7 +4,7 @@ func Capitalize(s string) string {
 	var s1 string
 	var prev rune = 0
 	for _, char := range s {
-		if char >= 'a' && char <= 'z' {
+		if (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') {
 			if !((prev >= 'a' && prev <= 'z') || (prev >= 'A' && prev <= 'Z') || (prev >= '0' && prev <= '9')) {
 				s1 += string(char - 32)
 			} else {
