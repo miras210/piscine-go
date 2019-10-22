@@ -3,7 +3,7 @@ package join
 func Join(strs []string, sep string) string {
 	var ans string
 	var count int = 0
-	for i := range strs {
+	for range strs {
 		count++
 	}
 	for i := range strs {
