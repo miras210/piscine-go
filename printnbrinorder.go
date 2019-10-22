@@ -3,8 +3,8 @@ package order
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-	var s string
-	for n != 0 {
+	s := string(n%10 + 48)
+	for n >= 10 {
 		n = n / 10
 		s += string(n%10 + 48)
 	}
