@@ -10,7 +10,7 @@ func main() {
 			for _, char := range arg[i] {
 				z01.PrintRune(char)
 			}
-		z01.PrintRune('\n')
+			z01.PrintRune('\n')
 		}
 	}
 }
