@@ -58,12 +58,7 @@ func main() {
 	var ans string
 	isFlag := false
 	isEmpty := true
-	text := `--insert
-	-i
-	  This flag inserts the string into the string passed as argument.
-  --order
-	-o
-	  This flag will behave like a boolean, if it is called it will order the argument.`
+	text := `--insert\n  -i\n\t This flag inserts the string into the string passed as argument.\n--order\n  -o\n\t This flag will behave like a boolean, if it is called it will order the argument.\n`
 	count := 0
 	for range arg {
 		count++
