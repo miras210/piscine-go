@@ -9,7 +9,7 @@ func main() {
 	for i := range arg {
 		count++
 	}
-	for i := count; i > 0; i-- {
+	for i := count - 1; i > 0; i-- {
 		for _, char := range arg[i] {
 			z01.PrintRune(char)
 		}
