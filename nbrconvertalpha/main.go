@@ -22,7 +22,7 @@ func isNum(s string) bool {
 }
 
 func main() {
-	arg := os.Args
+	arg := os.Args[1:]
 	str := "abcdefghijklmnopqrstuvwxyz"
 	flag := "--upper"
 	mode := false
