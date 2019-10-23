@@ -29,7 +29,8 @@ func main() {
 	for _, s := range arg {
 		if s == flag {
 			mode = true
-		} else if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {
+		}
+		if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {
 			if mode {
 				z01.PrintRune(rune(str[strNum(s)-1] - 32))
 			} else {
