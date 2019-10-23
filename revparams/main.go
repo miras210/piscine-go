@@ -6,7 +6,7 @@ import "github.com/01-edu/z01"
 func main() {
 	arg := os.Args
 	count := 0
-	for i := range arg {
+	for range arg {
 		count++
 	}
 	for i := count - 1; i > 0; i-- {
