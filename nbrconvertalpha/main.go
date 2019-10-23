@@ -14,7 +14,7 @@ func strNum(s string) int {
 
 func isNum(s string) bool {
 	for _, char := range s {
-		if !(char >= '0' &&  char <='9') {
+		if !(char >= '0' && char <= '9') {
 			return false
 		}
 	}
@@ -31,11 +31,11 @@ func main() {
 		arg = arg[1:]
 	}
 	for _, s := range arg {
-		if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {		
+		if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {
 			if mode {
-				z01.PrintRune(rune(str[strNum(s) - 1] - 32))
+				z01.PrintRune(rune(str[strNum(s)-1] - 32))
 			} else {
-				z01.PrintRune(rune(str[strNum(s) - 1]))
+				z01.PrintRune(rune(str[strNum(s)-1]))
 			}
 		} else {
 			z01.PrintRune(' ')
