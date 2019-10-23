@@ -37,8 +37,7 @@ func Insert(add string, s string) string {
 
 func Order(s string) string {
 	var ans string
-	var i rune
-	for i := 0; i <= 127; i++ {
+	for i := ' '; i <= '~'; i++ {
 		for _, char := range s {
 			if i == char {
 				ans += string(char)
