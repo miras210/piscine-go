@@ -11,16 +11,28 @@ func print(s string) {
 
 func Insert(add string, s string) string {
 	var Nadd string
+	var Ns string
 	beg := false
 	for _, char := range add {
 		if beg {
-			Nadd += string(char)
+			if char >= '!' && char <= '~' {
+				Nadd += string(char)
+			} else {
+				Nadd += string(' ')
+			}
 		}
 		if char == '=' {
 			beg = true
 		}
 	}
-	return s + Nadd
+	for _, char := range s {
+		if char >= '!' && char <= '~' {
+			Ns += string(char)
+		} else {
+			Ns += string(' ')
+		}
+	}
+	return Ns + Nadd
 }
 
 func Order(s string) string {
