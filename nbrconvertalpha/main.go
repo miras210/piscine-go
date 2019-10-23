@@ -22,16 +22,14 @@ func isNum(s string) bool {
 }
 
 func main() {
-	arg := os.Args[1:]
+	arg := os.Args
 	str := "abcdefghijklmnopqrstuvwxyz"
 	flag := "--upper"
 	mode := false
-	if arg[0] == flag {
-		mode = true
-		arg = arg[1:]
-	}
 	for _, s := range arg {
-		if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {
+		if s == flag {
+			mode = true
+		} else if isNum(s) && strNum(s) >= 1 && strNum(s) <= 26 {
 			if mode {
 				z01.PrintRune(rune(str[strNum(s)-1] - 32))
 			} else {
