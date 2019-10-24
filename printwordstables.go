@@ -13,10 +13,8 @@ func PrintWordsTables(table []string) {
 	for range table {
 		count++
 	}
-	for i, str := range table {
+	for _, str := range table {
 		print(str)
-		if i != count-1 {
-			z01.PrintRune('\n')
-		}
+		z01.PrintRune('\n')
 	}
 }
