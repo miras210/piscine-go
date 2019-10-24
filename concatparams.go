@@ -8,10 +8,9 @@ func ConcatParams(args []string) string {
 	}
 	for i, str := range args {
 		ans += str
-		if i != count-1 { 
+		if i != count-1 {
 			ans += "\n"
 		}
 	}
 	return ans
 }
-
