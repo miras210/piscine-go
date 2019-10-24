@@ -3,7 +3,7 @@ package make
 func MakeRange(min, max int) []int {
 	size := max - min
 	if size <= 0 {
-		arr := make([]int, 0)
+		var arr []int
 		return arr
 	} else {
 		arr := make([]int, size)
