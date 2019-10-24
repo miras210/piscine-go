@@ -9,12 +9,17 @@ func SplitWhiteSpaces(str string) []string {
 	}
 	arr := make([]string, count+1)
 	i := 0
+	next := false
 	for i != count {
 		for _, char := range str {
 			if !(char == '\n' || char == ' ' || char == '\t') {
 				arr[i] += string(char)
+				next = true
 			} else {
-				i++
+				if next {
+					i++
+					next = false
+				}
 			}
 		}
 	}
